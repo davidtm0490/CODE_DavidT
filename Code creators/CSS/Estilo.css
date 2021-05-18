@@ -783,7 +783,25 @@ body{
         }
 
                 /* -------------------Estilo para seccion NOSOTROS------------------------- */
+               
+            /*media queries para celulares*/
+            @media (max-width: 767px)
+            {
                 .gridNosotros{
+                    display: flex;
+                    flex-wrap: wrap
+
+                }
+                #titNosotros{
+                    font-size: 2rem;
+                }
+
+
+
+            }
+               
+            /*   
+            .gridNosotros{
                     display: grid;
                     
                     grid-template-areas: 
@@ -792,10 +810,10 @@ body{
                     "imagen navegador"
                     "imagen footer";
                     grid-template-rows: 40vh 40vh auto 2vh/*15vh 75vh 10vh 4vh;*/;
-                    grid-template-columns:50% 50%  /*33vw 33vw 33vw*/;
+                  /*  grid-template-columns:50% 50%  /*33vw 33vw 33vw*/;
                     
                 
-                }
+             /*   }
                 #titNosotros{
                     grid-area: imagen;
                     background-image: url(/IMAGENES/nosotros.jpeg);
@@ -848,7 +866,7 @@ body{
                     text-align: justify;
                 }
 
-                .navNosotros{
+             /*   .navNosotros{
                     grid-area: navegador;
                     margin-top: 1vh;
                     margin-bottom: 2vh;
