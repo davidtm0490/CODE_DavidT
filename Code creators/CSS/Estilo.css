@@ -791,17 +791,45 @@ body{
                     display: flex;
                     flex-direction: column;
                     flex-wrap: wrap
-
+                    
                 }
+
+                
                 #titNosotros{
                     font-size: 2rem;
                     height:fit-content;
                     text-align: center;
                 }
 
+                #imgMariluna{
+                    background-image: url(../IMAGENES/imgMariluna.jpg);
+                    height: 30vh;
+                    width: 100vw;
+                    background-size: cover;
 
+                }
 
-            }
+                #imgMariluna2{
+                    background-image: url(../IMAGENES/imgMariluna2.jpg);
+                    height: 30vh;
+                    width: 100vw;
+                    background-size: cover;
+                 }
+
+                 #imgDavid{
+                    background-image: url(../IMAGENES/imgDavid.jpg);
+                    height: 30vh;
+                    width: 100vw;
+                    background-size: cover;
+                }
+
+                #imgDavid2{
+                    background-image: url(../IMAGENES/imgDavid2.jpg);
+                    height: 30vh;
+                    width: 100vw;
+                    background-size: cover;
+                }
+
                
             /*   
             .gridNosotros{
@@ -879,7 +907,6 @@ body{
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<ESTILO SECCION CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-
 .fondoContacto{
    
     background-image: url(/IMAGENES/fondocontacto.jpeg);
@@ -887,7 +914,7 @@ body{
     background-repeat: no-repeat;
     position: absolute;
     top:-3.5%; left:0%;bottom: 0%; right: -0.5%;
-     }
+}
 
 form{
     text-align: left;
@@ -956,4 +983,3 @@ form{
         left: 24vw;
         font-size: 1.5rem;
     }
-/*--------------------------carrousel del bootstrap--------------------------------------------------------------*/
