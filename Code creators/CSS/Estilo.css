@@ -789,11 +789,14 @@ body{
             {
                 .gridNosotros{
                     display: flex;
+                    flex-direction: column;
                     flex-wrap: wrap
 
                 }
                 #titNosotros{
                     font-size: 2rem;
+                    height:fit-content;
+                    text-align: center;
                 }
 
 
