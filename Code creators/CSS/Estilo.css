@@ -1,0 +1,938 @@
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+    margin:0;
+    padding:0;
+}
+
+
+/*---------------------ESTILO PARA SECCION HOME---------------------------------*/
+
+  /*media queries para celulares */
+  @media (max-width: 767px)
+    { 
+        /*#fondohome{
+            display:none;
+            top: 0;
+            left:0;
+            z-index: -1;
+            width: 100%;
+            }*/ /**/
+
+
+            @media (min-aspect-ratio: 16/9){
+                #fondohome{
+                  width: 100%;
+                  height: auto;
+              }  
+              }
+              
+              @media (max-aspect-ratio: 16/9){
+                  #fondohome{
+                    width: auto;
+                    height: 100%;
+                }  
+                }
+
+        #fondohome{
+            position: fixed;
+            left: 0;
+            top: 0;
+            height:100%;
+            width: 100%;
+            z-index: -1;
+            object-fit:cover;
+        }
+
+        .home{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .code{
+            grid-area: titulo;
+            font-family: 'Tenor Sans', sans-serif;
+            text-transform: uppercase;
+            font-size:550% ;
+            letter-spacing: 0.2rem;
+            height: fit-content;
+            background-color:rgba(14, 13, 13, 0.432);
+            border-radius: 1rem;
+            width:fit-content;
+            color: white;
+            margin-top: 5vh;
+        }
+
+
+        .creators{
+            font-family: 'Amiri', serif;
+            text-align: center;
+            font-size: 150%;
+            background-color:rgba(14, 13, 13, 0.432);
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            width:fit-content;
+            color: white;
+        }
+
+        .campo{
+            font-family: 'Roboto', sans-serif;
+            font-size: 170%;
+            text-align: center;
+            letter-spacing: 0.5rem;
+            background-color:rgba(14, 13, 13, 0.432);
+            border-radius: 1rem;
+            width:fit-content;
+            
+            color: white;
+            margin-top: 10vh;
+        }
+
+        nav{
+          position: fixed;  
+          text-align: center;
+          margin-top: 60vh;
+          width: 100vw;
+          margin-left: 35vw;
+          margin-right: 35vw;
+          
+          
+            
+        }
+        .fondoNav{
+            background-color: rgba(8, 8, 8, 0.452);
+            height: fit-content;  
+            width:30vw;
+            margin-bottom: 3vh;
+            
+         }
+
+        ul.lista1{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            justify-items: center;
+            list-style: none;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+                               
+            
+        }
+
+  
+        li a{
+            font-size: 3.2vh;
+            color:white;
+            font-weight: bold;
+            text-decoration: none;
+            width: 10vw;
+            list-style-type: none;
+            text-align: center;
+            margin-left:1vw;
+           
+            
+        }
+
+        .sublista{
+            position: absolute;
+            display: none;
+        }
+
+        .sublista li{
+           display: block;
+            position: relative;
+        }  
+        
+        .sublista li a{
+            line-height: 1.5rem;
+            font-size: 1rem;
+            background-color: rgba(8, 8, 8, 0.555) ;
+           padding-left: 1vw;
+           padding-right: 1vw;
+        }
+        
+
+        ul li:hover ul{
+            display: flex;
+            flex-direction: column;
+            margin-left: 30vw;
+            margin-top: -4vh;
+            padding-left: 0;
+           
+
+            
+           
+        }
+
+        .sublista a:hover{
+            background-color: black;
+        }
+
+        footer{
+            position: fixed;
+            bottom: 0%;
+            width: 100%;
+            height: fit-content;
+            text-align: center;
+            color: white;
+            background-image: linear-gradient(to right,black,gray);
+            font-size: 2.5vh;
+        }
+
+    }
+
+
+    /*media queries para tablets*/
+   @media (min-width: 768px)
+    { 
+              /*#fondohome{
+                  display:none;
+                  top: 0;
+                  left:0;
+                  z-index: -1;
+                  width: 100%;
+                  }*/
+
+                  @media (min-aspect-ratio: 16/9){
+                    #fondohome{
+                      width: 100%;
+                      height: auto;
+                  }  
+                  }
+                  
+                  @media (max-aspect-ratio: 16/9){
+                      #fondohome{
+                        width: auto;
+                        height: 100%;
+                    }  
+                    }
+      
+              #fondohome{
+                  position: fixed;
+                  left: 0;
+                  top: 0;
+                  height:100%;
+                  width: 100%;
+                  z-index: -1;
+                  object-fit:cover;
+              }
+      
+              .home{
+                  display: flex;
+                  flex-direction: column;
+                  align-items:flex-end;
+                  flex-wrap: wrap;
+              }
+      
+              .code{
+                  grid-area: titulo;
+                  font-family: 'Tenor Sans', sans-serif;
+                  text-transform: uppercase;
+                  font-size:1150% ;
+                  letter-spacing: 0.2rem;
+                  height: fit-content;
+                  background-color:rgba(14, 13, 13, 0.432);
+                  border-radius: 1rem;
+                  width:fit-content;
+                  color: white;
+                  margin-top: 5vh;
+                  margin-right: 2vw;
+              }
+      
+      
+              .creators{
+                  font-family: 'Amiri', serif;
+                  text-align: center;
+                  font-size: 350%;
+                  background-color:rgba(14, 13, 13, 0.432);
+                  border-radius: 1rem;
+                  width:fit-content;
+                  color: white;
+                  margin-right: 2vw;
+                  margin-top: 1vh;
+              }
+      
+              .campo{
+                  font-family: 'Roboto', sans-serif;
+                  font-size: 450%;
+                  text-align: center;
+                  letter-spacing: 0.5rem;
+                  background-color:rgba(14, 13, 13, 0.432);
+                  border-radius: 1rem;
+                  width:fit-content;
+                  margin-right: 2vw;
+                  color: white;
+                  margin-top: 3vh;
+              }
+      
+              nav{
+                position: fixed;             
+                width: 100vw;
+                margin-top:75vh ;
+                
+                  
+              }
+      
+              ul.lista1{
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: space-evenly;
+                  list-style: none;
+                  list-style-type: none;
+                  padding: 0;
+                  margin: 0;
+                                     
+                  
+              }
+      
+      
+              .fondoNav{
+                  background-color: rgba(8, 8, 8, 0.452);
+                  height: fit-content;  
+                  width:fit-content;
+                  margin-bottom: 3vh;
+                
+                  
+               }
+     
+              li a{
+                  font-size: 3.2vh;
+                  color:white;
+                  font-weight: bold;
+                  text-decoration: none;
+                  flex-basis: 2vh;
+                  list-style-type:none;
+                  padding-left: 1vw;
+                  padding-right: 1vw;
+                
+          
+                  
+              }
+      
+              .sublista{
+                  position: absolute;
+                  display: none;
+              }
+      
+              .sublista li{
+                  display: block;
+                  background-color: rgba(14, 13, 13, 0.582);
+                  position: relative;
+                 
+                 
+              }
+      
+              ul li:hover ul{
+                  display: block;
+                  margin-left: 0;
+                  padding-left: 0;
+                 
+                  
+                 
+              }
+
+              .sublista li a {
+                  font-size: 1.5rem;
+                  line-height: 2rem;
+              }
+
+              .sublista a:hover{
+                background-color: black;
+            }
+      
+      
+      
+              footer{
+                  position: fixed;
+                  bottom: 0%;
+                  width: 100%;
+                  height: fit-content;
+                  text-align: center;
+                  color: white;
+                  background-image: linear-gradient(to right,black,gray);
+                  font-size: 2.5vh;
+                  
+              }
+      
+          }
+          
+          /*media querie para laptops*/
+         @media (min-width: 1024px)
+        { 
+              /*#fondohome{
+                  display:none;
+                  top: 0;
+                  left:0;
+                  z-index: -1;
+                  width: 100%;
+                  }*/ 
+
+                  @media (min-aspect-ratio: 16/9){
+                    #fondohome{
+                      width: 100%;
+                      height: auto;
+                  }  
+                  }
+                  
+                  @media (max-aspect-ratio: 16/9){
+                      #fondohome{
+                        width: auto;
+                        height: 100%;
+                    }  
+                    }
+      
+              #fondohome{
+                  position: fixed;
+                  left: 0;
+                  top: 0;
+                  height:100%;
+                  width: 100%;
+                  z-index: -1;
+                  object-fit:cover;
+              }
+      
+              .home{
+                  display: flex;
+                  flex-direction: column;
+                  align-items:flex-end;
+                  flex-wrap: wrap;
+              }
+              .code{
+                  font-size: 1000%;
+                  margin-top: 1vh;
+              }
+
+              .creators{
+                  font-family: 'Amiri', serif;
+                  text-align: center;
+                  font-size: 400%;
+                  background-color:rgba(14, 13, 13, 0.432);
+                  border-bottom-left-radius: 1rem;
+                  width:fit-content;
+                  color: white;
+              }
+      
+              .campo{
+                  font-family: 'Roboto', sans-serif;
+                  font-size: 400%;
+                  text-align: center;
+                  letter-spacing: 0.5rem;
+                  background-color:rgba(14, 13, 13, 0.432);
+                  border-bottom-left-radius: 1rem;
+                  border-top-left-radius: 1rem;
+                  width:fit-content;
+                  
+                  color: white;
+                  margin-top: 1vh;
+              }
+      
+              nav{
+                width: 100vw;
+                position:fixed;
+                bottom: 15vh;
+                
+                  
+              }
+      
+              ul.lista1{
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: space-evenly;
+                  list-style: none;
+                  list-style-type: none;
+                  padding: 0;
+                  margin: 0;
+                                     
+                  
+              }
+      
+      
+              .fondoNav{
+                  background-color: rgba(8, 8, 8, 0.452);
+                  height: fit-content;  
+                  width:fit-content;
+                  margin-bottom: 3vh;
+                  text-align: center;
+                  border-radius: 0.2rem;
+                
+                  
+               }
+     
+              li a{
+                  font-size: 4vh;
+                  color:white;
+                  font-weight: bold;
+                  text-decoration: none;
+                  list-style-type:none;
+                 
+                
+          
+                  
+              }
+      
+              .sublista{
+                  position: absolute;
+                  display: none;
+                  width: 30vw;
+                  
+                 
+              }
+      
+              .sublista li{
+                  
+                  background-color: rgba(14, 13, 13, 0.582);
+                  position: relative;
+                  width: 14.3vw;
+                 
+                 
+              }
+      
+              .lista1 li:hover ul{
+                display: flex;
+                flex-direction: column;
+      
+              }
+
+            .sublista li a {
+                  font-size: 1.5rem;
+                  width: 10vw;
+              }
+
+            .sublista li a:hover {
+                background-color: black;
+                
+            }
+      
+      
+      
+                footer{
+                  position: fixed;
+                  bottom: 0%;
+                  width: 100%;
+                  height: 4vh;
+                  text-align: center;
+                  color: white;
+                  background-image: linear-gradient(to right,black,gray);
+                  font-size: 2.5vh;
+                }
+
+                footer p {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+      
+        }
+
+
+    /*----------------------------------------------ESTILOS PARA LA SECCION SERVICIOS------------------------------------------*/
+    /*media querie para laptos y pantallas de pc standard*/      
+          @media (min-width: 1280px )
+           {
+                .servicios{
+                   text-align: center;
+                   font-size: 300% ;
+                   margin-bottom:0;
+                }
+
+                .contFlex{
+                    display: flex;
+                    flex-direction:row;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    
+                }
+                .contImgDiseno{
+                    background-image: url(/IMAGENES/diseño\ grafico.jpeg);
+                    background-size: cover;
+                    width: 20vw;
+                    height: 25vh;
+                }
+
+                #disenoGrafico h2{
+                    text-align: center;
+                    font-size: 200%;
+                }
+
+                #disenoGrafico ul{
+                    padding-left: 1vw;
+                    font-size: 1.3rem;
+                }
+
+                .contImgConsult{
+                    background-image: url(/IMAGENES/consultoria.jpeg);
+                    background-size: cover;
+                    width: 20vw;
+                    height: 25vh;
+                }
+
+                #consultoria p{
+                    width: 20vw;
+                    text-align: justify;
+                    font-size: 1.3rem;
+                }
+                #consultoria h2{
+                    text-align: center;
+                    font-size: 200%;
+                }
+
+                .contImgWeb{
+                    background-image: url(/IMAGENES/prog\ web.jpeg);
+                    background-size: cover;
+                    width: 20vw;
+                    height: 25vh;
+                }
+
+                #desarrolloWeb p{
+                    width: 20vw;
+                    text-align: justify;
+                    font-size: 1.3rem;
+                }
+
+                #desarrolloWeb h2{
+                    text-align: center;
+                    font-size: 200%;
+                }
+
+                .navServ{
+                    position: fixed;
+                    margin-bottom: 2vh;
+                    margin-top: 0vh;
+                }
+            }
+
+            @media (min-width: 768px) and (max-width: 1279px )
+            {
+                 .servicios{
+                    text-align: center;
+                    font-size: 300% ;
+                    margin-bottom:5vh;
+                 }
+ 
+                 .contFlex{
+                     display: flex;
+                     flex-direction:row;
+                     flex-wrap: wrap;
+                     justify-content: space-evenly;
+                     
+                 }
+                 .contImgDiseno{
+                     background-image: url(/IMAGENES/diseño\ grafico.jpeg);
+                     background-size: cover;
+                     width: 30vw;
+                     height: 25vh;
+                 }
+ 
+                 #disenoGrafico h2{
+                     text-align: center;
+                     font-size: 200%;
+                 }
+ 
+                 #disenoGrafico ul{
+                     padding-left: 1vw;
+                     font-size: 1rem;
+                 }
+ 
+                 .contImgConsult{
+                     background-image: url(/IMAGENES/consultoria.jpeg);
+                     background-size: cover;
+                     width: 30vw;
+                     height: 25vh;
+                 }
+                 #consultoria{
+                     margin-left: 0vw;
+                 }
+ 
+                 #consultoria p{
+                     width: 30vw;
+                     text-align: justify;
+                     font-size: 1rem;
+                 }
+                 #consultoria h2{
+                     text-align: center;
+                     font-size: 200%;
+                     width: 30vw;
+                     margin-bottom: 3vh;
+                     margin-top: 5vh;
+                 }
+ 
+                 .contImgWeb{
+                     background-image: url(/IMAGENES/prog\ web.jpeg);
+                     background-size: cover;
+                     width: 30vw;
+                     height: 25vh;
+                 }
+ 
+                 #desarrolloWeb p{
+                     width: 30vw;
+                     text-align: justify;
+                     font-size: 1rem;
+                 }
+ 
+                 #desarrolloWeb h2{
+                     text-align: center;
+                     font-size: 200%;
+                 }
+ 
+                 .navServ{
+                     position: fixed;
+                     margin-bottom: 2vh;
+                     margin-top: 2vh;
+                 }
+             }
+ /*-------------------------Media querie para moviles en modo vertical-----------------------------------------*/
+             @media (max-width: 767px )
+             {
+
+                .bodyServ{
+                  height: 1400px;
+                }
+                 
+                  .servicios{
+                     text-align: center;
+                     font-size: 300% ;
+                     margin-bottom:5vh;
+                  }
+  
+                  .contFlex{
+                      display: flex;
+                      flex-direction:column;
+                      flex-wrap: nowrap;
+                      justify-items: center;
+                      
+                  }
+                  .contImgDiseno{
+                      background-image: url(/IMAGENES/diseño\ grafico.jpeg);
+                      background-size: cover;
+                      width: 95vw;
+                      height: 15vh;
+                      margin-left: 2.5vw;
+                  }
+  
+                  #disenoGrafico h2{
+                      text-align: center;
+                      font-size: 200%;
+                  }
+  
+                  #disenoGrafico ul{
+                      padding-left: 1vw;
+                      font-size: 1rem;
+                      text-align: center;
+                      list-style: circle;
+                  }
+  
+                  .contImgConsult{
+                      background-image: url(/IMAGENES/consultoria.jpeg);
+                      background-size: cover;
+                      width: 95vw;
+                      height: 15vh;
+                      margin-left: 2.5vw;
+                  }
+                  #consultoria{
+                      margin-left: 0vw;
+                      
+                  }
+  
+                  #consultoria p{
+                      width: 95vw;
+                      text-align: justify;
+                      font-size: 1rem;
+                      padding-left: 2vw;
+                      padding-right: 1vw;
+            
+                  }
+                  #consultoria h2{
+                      text-align: center;
+                      font-size: 200%;
+                      
+                  }
+  
+                  .contImgWeb{
+                      background-image: url(/IMAGENES/prog\ web.jpeg);
+                      background-size: cover;
+                      width: 95vw;
+                      height: 15vh;
+                      margin-left: 2.5vw;
+                  }
+  
+                  #desarrolloWeb p{
+                      width: 95vw;
+                      text-align: justify;
+                      font-size: 1rem;
+                      margin-bottom: 5vh;
+                  }
+  
+                  #desarrolloWeb h2{
+                      text-align: center;
+                      font-size: 200%;
+                  }
+
+                  .navServ{
+                      position: absolute;
+                      margin-top:0;
+                  }
+  
+             footer{
+                 margin-top: 5vh;
+             }     
+        }
+
+                /* -------------------Estilo para seccion NOSOTROS------------------------- */
+                .gridNosotros{
+                    display: grid;
+                    
+                    grid-template-areas: 
+                    "imagen mariluna"
+                    "imagen david"
+                    "imagen navegador"
+                    "imagen footer";
+                    grid-template-rows: 40vh 40vh auto 2vh/*15vh 75vh 10vh 4vh;*/;
+                    grid-template-columns:50% 50%  /*33vw 33vw 33vw*/;
+                    
+                
+                }
+                #titNosotros{
+                    grid-area: imagen;
+                    background-image: url(/IMAGENES/nosotros.jpeg);
+                    background-size:cover;
+                    background-repeat: no-repeat;
+                    color: white;
+                    background-position-x: -12vw;
+                    width: 50vw;
+                }
+
+                #titNosotros h1{
+                    font-size: 500%;
+                    text-align: left;
+                    margin-left: 2vw;
+                }
+                
+                .mariluna{
+                    grid-area: mariluna;
+                    height: 30vh;
+                    text-align: center;
+                    margin-top: 2vh;
+                   
+                   
+                }
+        
+                .mariluna h2{
+                    font-size: 300%;
+                }
+                .mariluna p{
+                    font-size: 150%;
+                    text-align: justify;
+                    margin: 2vh 2vw 2vh 1vw;
+                }
+
+                .david{
+                    grid-area:david;
+                    height: 30vh;
+                    text-align: center;
+                   
+                }
+        
+                .david h2{
+                    font-size: 300%;
+                    margin-top: 4vh;
+                }
+                
+                .david p{
+                    font-size:150%;
+                    margin:3vh 2vw 2vh 1vw;
+                    text-align: justify;
+                }
+
+                .navNosotros{
+                    grid-area: navegador;
+                    margin-top: 1vh;
+                    margin-bottom: 2vh;
+                    margin-left: 45vw;
+                    width: 50vw;
+                }
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<ESTILO SECCION CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+.fondoContacto{
+   
+    background-image: url(/IMAGENES/fondocontacto.jpeg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:-3.5%; left:0%;bottom: 0%; right: -0.5%;
+     }
+
+form{
+    text-align: left;
+    font-weight: bold;
+    width:40,1%;
+    height: 80%;
+    margin-left: 4%;
+    margin-top: 6%;
+    color: aliceblue;   
+}
+
+.contacTitle{
+    position: absolute;
+    top: 50%;
+    left: 6%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 400%;
+    color: white;
+    z-index: 2;
+    
+}
+
+.contactSubTitle{
+    position: absolute;
+    top: 67%;
+    left: 6.5%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 160%;
+    font-weight: lighter;
+    color: white;
+    
+}
+
+/*estilos para sección PORTFOLIOS*/
+    .tituloLP{
+    text-align: center;
+    margin-bottom: 2vh;
+    font-size: 4rem;
+
+    }
+
+
+    .navPortfolio{
+        position: fixed;
+        top: 7vh;
+    }
+    
+    .slide1{
+        font-size: 2rem;
+    }
+    .slide2{
+        font-size: 2rem;
+        color:white;
+        background-color: rgba(0, 0, 0, 0.788);
+        width: fit-content;
+        position: absolute;
+        bottom: 6vh;
+        left: 26vw;
+    }
+    .pslide1{
+        color:white;
+        background-color: rgba(0, 0, 0, 0.788);
+        width: fit-content;
+        position: absolute;
+        bottom: 0vh;
+        left: 24vw;
+        font-size: 1.5rem;
+    }
+/*--------------------------carrousel del bootstrap--------------------------------------------------------------*/
