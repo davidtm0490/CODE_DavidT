@@ -93,6 +93,7 @@ body{
         }
 
         nav{
+          
           position: fixed;  
           text-align: center;
           margin-top: 60vh;
@@ -793,8 +794,11 @@ body{
                     flex-wrap: wrap
                     
                 }
+                .navNosotros{
+                    display: none;
+                    
+                }
 
-                
                 #titNosotros{
                     text-align: left;
                     margin-left: 10vw;
@@ -854,7 +858,8 @@ body{
                 }
 
                 .dropdown{
-                    z-index: 1;
+                    
+                    
                     position: fixed;
                     top: 1.5vh;
                     right: 1vw;
