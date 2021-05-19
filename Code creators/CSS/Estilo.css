@@ -858,12 +858,15 @@ body{
                 }
 
                 .dropdown{
-                    
-                    
                     position: fixed;
                     top: 1.5vh;
                     right: 1vw;
                     
+                }
+                .dropdown-menu{
+                    min-width: 5rem;
+                    text-align: center;
+                    font-weight: bold;
                 }
             }
                
